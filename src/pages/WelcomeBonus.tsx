@@ -157,7 +157,7 @@ export default function WelcomeBonus() {
                             <span className="text-xs text-brand-text-muted uppercase">Rollover</span>
                             <span className="text-white font-bold">{casino.rollover}</span>
                           </div>
-                          <Button className="btn-gold w-full py-8 text-lg font-bold" asChild>
+                          <Button className="w-full py-8 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20 transition-all hover:scale-[1.02]" asChild>
                             <a href={casino.affiliateUrl} target="_blank" rel="noopener noreferrer">
                               Jugar Ahora <ChevronRight className="ml-2 w-5 h-5" />
                             </a>

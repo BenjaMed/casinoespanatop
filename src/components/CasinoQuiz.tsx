@@ -123,7 +123,7 @@ export default function CasinoQuiz() {
                     href={result.affiliateUrl} 
                     target="_blank" 
                     rel="nofollow noopener sponsored"
-                    className="btn-primary w-full py-4 flex items-center justify-center gap-2"
+                    className="w-full py-4 flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20 transition-all transform hover:scale-[1.02]"
                   >
                     Reclamar Bono Ahora <ChevronRight className="w-4 h-4" />
                   </a>

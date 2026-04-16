@@ -125,7 +125,7 @@ export default function NoDepositBonus() {
                     <p className="text-sm text-brand-text-muted">{casino.review.summary}</p>
                   </div>
                   <div className="shrink-0">
-                    <Button className="btn-gold px-8 py-6" asChild>
+                    <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20 transition-all hover:scale-[1.02]" asChild>
                       <a href={casino.affiliateUrl} target="_blank" rel="noopener noreferrer">Reclamar Bono</a>
                     </Button>
                   </div>

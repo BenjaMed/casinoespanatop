@@ -92,7 +92,7 @@ export default function CasinoComparator() {
                       href={casino.affiliateUrl} 
                       target="_blank" 
                       rel="nofollow noopener sponsored"
-                      className="btn-primary py-2 px-4 text-xs w-full flex items-center justify-center gap-2"
+                      className="py-2 px-4 text-xs w-full flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-lg shadow-md shadow-brand-gold/10"
                     >
                       Jugar <ChevronRight className="w-3 h-3" />
                     </a>

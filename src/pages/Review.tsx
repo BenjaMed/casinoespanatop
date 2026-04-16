@@ -70,7 +70,7 @@ export default function Review() {
                 href={casino.affiliateUrl} 
                 target="_blank" 
                 rel="nofollow noopener sponsored"
-                className="btn-primary w-full py-4 flex items-center justify-center gap-2 text-lg"
+                className="w-full py-4 flex items-center justify-center gap-2 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20 transition-all transform hover:scale-[1.02]"
               >
                 Reclamar Bono <ChevronRight className="w-5 h-5" />
               </a>

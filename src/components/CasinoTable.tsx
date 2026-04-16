@@ -132,7 +132,7 @@ export default function CasinoTable() {
                       href={casino.affiliateUrl} 
                       target="_blank" 
                       rel="nofollow noopener sponsored"
-                      className="btn-outline text-xs py-2 px-4"
+                      className="text-xs py-2 px-4 bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded transition-all shadow-md shadow-brand-gold/10"
                     >
                       Jugar Ahora
                     </a>
@@ -188,9 +188,9 @@ export default function CasinoTable() {
                 href={casino.affiliateUrl} 
                 target="_blank" 
                 rel="nofollow noopener sponsored"
-                className="btn-primary w-full py-3 text-center flex items-center justify-center gap-2"
+                className="w-full py-4 text-center flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20 transition-all font-display text-lg"
               >
-                Jugar Ahora <ChevronRight className="w-4 h-4" />
+                Jugar Ahora <ChevronRight className="w-5 h-5" />
               </a>
               <Link to={`/casino/${casino.slug}`} className="btn-outline w-full py-3 text-center text-sm">
                 Leer Review Completa

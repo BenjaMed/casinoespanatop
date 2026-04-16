@@ -1,0 +1,13 @@
+# Robots.txt for CasinosTOP
+User-agent: *
+Allow: /
+Allow: /llms.txt
+
+# Favoring LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://ais-dev-xhsbehteddx7azdxaomwsy-261235222994.europe-west2.run.app/sitemap.xml

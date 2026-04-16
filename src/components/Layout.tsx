@@ -101,7 +101,7 @@ export default function Layout() {
                   href="https://www.bet365.com/olp/open-account?affiliate=365_029746" 
                   target="_blank" 
                   rel="nofollow noopener sponsored"
-                  className="btn-gold px-4 sm:px-8 py-2 sm:py-3 flex items-center gap-2 text-sm sm:text-base"
+                  className="bg-brand-gold hover:bg-brand-gold/90 text-black px-4 sm:px-8 py-2 sm:py-3 flex items-center gap-2 text-sm sm:text-base font-bold rounded-xl shadow-lg shadow-brand-gold/20"
                 >
                   Reclamar Bono <ChevronRight className="w-4 h-4" />
                 </a>

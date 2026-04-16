@@ -212,7 +212,7 @@ export default function Home() {
                   Su sección de casino en vivo es, posiblemente, la mejor del país, con mesas exclusivas y crupieres que crean un ambiente de club privado inigualable. Además, su integración con Bizum es perfecta, permitiendo depósitos en segundos.
                 </p>
                 <div className="mt-8">
-                  <Button className="btn-gold w-full md:w-auto px-12 py-6 text-lg" asChild>
+                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                     <a href="https://www.luckia.es/" target="_blank" rel="noopener noreferrer">
                       Visitar Luckia <ChevronRight className="ml-2 w-5 h-5" />
                     </a>
@@ -229,7 +229,7 @@ export default function Home() {
                   La app de Bet365 es un prodigio de la ingeniería: rápida, segura y con una estabilidad que pocos competidores pueden igualar. Si buscas un sitio donde todo funcione a la primera, este es tu casino.
                 </p>
                 <div className="mt-8">
-                  <Button className="btn-gold w-full md:w-auto px-12 py-6 text-lg" asChild>
+                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                     <a href="https://www.bet365.es/" target="_blank" rel="noopener noreferrer">
                       Jugar en Bet365 <ChevronRight className="ml-2 w-5 h-5" />
                     </a>
@@ -246,7 +246,7 @@ export default function Home() {
                   Su interfaz oscura y elegante encaja perfectamente con nuestra filosofía de diseño. Es un casino que se siente premium desde el primer clic, ideal para jugadores que buscan algo diferente a la oferta estándar.
                 </p>
                 <div className="mt-8">
-                  <Button className="btn-gold w-full md:w-auto px-12 py-6 text-lg" asChild>
+                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                     <a href="https://www.888casino.es/" target="_blank" rel="noopener noreferrer">
                       Ir a 888casino <ChevronRight className="ml-2 w-5 h-5" />
                     </a>
@@ -263,7 +263,7 @@ export default function Home() {
                   Su programa de fidelidad (disponible tras 30 días) es uno de los más generosos, premiando la constancia con bonos de dinero real y giros gratis sin complicaciones.
                 </p>
                 <div className="mt-8">
-                  <Button className="btn-gold w-full md:w-auto px-12 py-6 text-lg" asChild>
+                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                     <a href="https://www.leovegas.es/es-es/" target="_blank" rel="noopener noreferrer">
                       Probar LeoVegas <ChevronRight className="ml-2 w-5 h-5" />
                     </a>
@@ -280,7 +280,7 @@ export default function Home() {
                   Es la opción preferida para los "high rollers" o jugadores que apuestan fuerte, gracias a sus límites de mesa flexibles y su atención VIP personalizada.
                 </p>
                 <div className="mt-8">
-                  <Button className="btn-gold w-full md:w-auto px-12 py-6 text-lg" asChild>
+                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                     <a href="https://www.casinogranmadridonline.es/" target="_blank" rel="noopener noreferrer">
                       Casino Gran Madrid <ChevronRight className="ml-2 w-5 h-5" />
                     </a>
@@ -337,7 +337,7 @@ export default function Home() {
                 <h4 className="text-xl font-bold mb-2">🎰 ¿Buscas las mejores slots?</h4>
                 <p className="text-sm text-brand-text-muted">LeoVegas tiene el catálogo más extenso de España.</p>
               </div>
-              <Button className="btn-gold px-8 py-6" asChild>
+              <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                 <a href="https://www.leovegas.es/es-es/" target="_blank" rel="noopener noreferrer">Jugar Ahora</a>
               </Button>
             </div>
@@ -473,7 +473,7 @@ export default function Home() {
                 <h4 className="text-xl font-bold mb-2">🛡️ Juega Seguro en Luckia</h4>
                 <p className="text-sm text-brand-text-muted">Operador 100% español con licencia DGOJ garantizada.</p>
               </div>
-              <Button className="btn-gold px-8 py-6" asChild>
+              <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20" asChild>
                 <a href="https://www.luckia.es/" target="_blank" rel="noopener noreferrer">Entrar a Luckia</a>
               </Button>
             </div>
@@ -526,7 +526,7 @@ export default function Home() {
             </p>
 
             <div className="not-prose mb-20 text-center">
-              <Button className="btn-gold px-16 py-8 text-2xl font-display font-bold shadow-[0_0_50px_rgba(245,197,24,0.3)]" asChild>
+              <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black px-16 py-8 text-2xl font-display font-bold rounded-2xl shadow-[0_0_50px_rgba(245,197,24,0.3)] transition-all transform hover:scale-105" asChild>
                 <a href="https://www.bet365.es/" target="_blank" rel="noopener noreferrer">
                   VER RANKING TOP 15 COMPLETO
                 </a>
