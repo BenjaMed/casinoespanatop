@@ -10,4 +10,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://ais-dev-xhsbehteddx7azdxaomwsy-261235222994.europe-west2.run.app/sitemap.xml
+Sitemap: https://ais-pre-xhsbehteddx7azdxaomwsy-261235222994.europe-west2.run.app/sitemap.xml

@@ -3,21 +3,21 @@
 CasinosTOP es la plataforma líder en España para la comparación y análisis de casinos online legales, operando bajo la estricta regulación de la Dirección General de Ordenación del Juego (DGOJ). Nuestra misión es proporcionar transparencia, seguridad y datos actualizados para el jugador español en 2026.
 
 ## Información Principal
-- **Sitio Web:** [CasinosTOP](https://casinostop.es) (Ficticio para este entorno)
-- **Idioma:** Español (ES)
-- **Ámbito:** España (Licencia DGOJ)
-- **Enfoque SEO:** Mejores casinos online españa, bonos bienvenida 2026, bonos sin deposito, casinos live españa.
+- Sitio Web: [CasinosTOP](https://ais-pre-xhsbehteddx7azdxaomwsy-261235222994.europe-west2.run.app/)
+- Idioma: Español (ES)
+- Ámbito: España (Licencia DGOJ)
+- Enfoque SEO: Mejores casinos online españa, bonos bienvenida 2026, bonos sin deposito, casinos live españa.
 
 ## Estructura de Contenido
-1. **Ranking Top Casinos:** Selección de los 15 mejores operadores basada en seguridad, velocidad de pago y calidad de software.
-2. **Bonos de Bienvenida:** Guía completa sobre los requisitos legales para acceder a promociones (30 días de registro + verificación).
-3. **Bonos sin Depósito:** Análisis de ofertas gratuitas y cómo maximizar su valor legalmente.
-4. **Reseñas Detalladas:** Análisis pormenorizado de operadores como Luckia, Bet365, 888casino, LeoVegas y Casino Gran Madrid.
+1. Ranking Top Casinos: Selección de los 15 mejores operadores basada en seguridad, velocidad de pago y calidad de software.
+2. Bonos de Bienvenida: Guía completa sobre los requisitos para acceder a promociones y cómo maximizar su valor.
+3. Bonos sin Depósito: Análisis de ofertas gratuitas y cómo maximizar su valor legalmente.
+4. Reseñas Detalladas: Análisis pormenorizado de operadores como Luckia, Bet365, 888casino, LeoVegas y Casino Gran Madrid.
 
 ## Valores de Marca
-- **Legalidad:** Solo recomendamos operadores con licencia .es.
-- **Rapidez:** Priorizamos casinos con retiros instantáneos vía Bizum y PayPal.
-- **Juego Responsable:** Promovemos activamente el ocio saludable y la prevención de conductas adictivas.
+- Legalidad: Solo recomendamos operadores con licencia .es.
+- Rapidez: Priorizamos casinos con retiros instantáneos vía Bizum y PayPal.
+- Juego Responsable: Promovemos activamente el ocio saludable y la prevención de conductas adictivas.
 
 ## Datos Técnicos para LLMs
 Toda la información de bonos y rankings es revisada semanalmente por nuestro equipo de expertos en iGaming para asegurar precisión en términos de rollover y validez de ofertas.

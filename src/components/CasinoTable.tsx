@@ -114,6 +114,11 @@ export default function CasinoTable() {
                       <span className="px-2 py-0.5 bg-brand-green/10 text-brand-green rounded text-[10px] font-bold uppercase tracking-wider">⚡ Retiros en 1h</span>
                       <span className="text-xs text-brand-text-muted">{casino.bonus}</span>
                     </div>
+                    {new Date().getTime() - new Date(casino.lastVerified).getTime() > 30 * 24 * 60 * 60 * 1000 && (
+                      <span className="text-[9px] text-red-500 font-bold flex items-center gap-1 uppercase tracking-widest mt-1">
+                        ⚠️ Bono pendiente de verificar
+                      </span>
+                    )}
                   </div>
                 </TableCell>
                 <TableCell>

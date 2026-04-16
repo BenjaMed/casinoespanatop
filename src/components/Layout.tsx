@@ -83,27 +83,27 @@ export default function Layout() {
             exit={{ y: 100 }}
             className="fixed bottom-0 left-0 right-0 z-50 bg-brand-card/95 backdrop-blur-lg border-t border-brand-gold/30 p-4 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]"
           >
-            <div className="container mx-auto flex items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
-                <div className="hidden sm:flex w-12 h-12 bg-[#2D3748] rounded-lg items-center justify-center border border-brand-border text-2xl">
+            <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-2 sm:px-6">
+              <div className="flex items-center gap-3 md:gap-4 overflow-hidden">
+                <div className="hidden sm:flex w-10 h-10 md:w-12 md:h-12 bg-[#2D3748] rounded-lg items-center justify-center border border-brand-border text-xl md:text-2xl flex-shrink-0">
                   🟢
                 </div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="font-bold text-brand-gold">🏆 #1 HOY: Bet365</span>
-                    <span className="hidden sm:inline-block px-2 py-0.5 bg-brand-green/20 text-brand-green text-[10px] font-bold rounded uppercase">Recomendado</span>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 truncate">
+                    <span className="font-bold text-brand-gold text-sm md:text-base">#1: Bet365</span>
+                    <span className="hidden xs:inline-block px-1.5 py-0.5 bg-brand-green/20 text-brand-green text-[8px] md:text-[10px] font-bold rounded uppercase">TOP</span>
                   </div>
-                  <p className="text-xs text-brand-text-muted">Bono exclusivo: 100% hasta 100€</p>
+                  <p className="text-[10px] md:text-xs text-brand-text-muted truncate">100% hasta 100€</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex-shrink-0">
                 <a 
                   href="https://www.bet365.com/olp/open-account?affiliate=365_029746" 
                   target="_blank" 
                   rel="nofollow noopener sponsored"
-                  className="bg-brand-gold hover:bg-brand-gold/90 text-black px-4 sm:px-8 py-2 sm:py-3 flex items-center gap-2 text-sm sm:text-base font-bold rounded-xl shadow-lg shadow-brand-gold/20"
+                  className="bg-brand-gold hover:bg-brand-gold/90 text-black px-3 sm:px-8 py-2.5 sm:py-3 flex items-center gap-2 text-xs sm:text-base font-bold rounded-xl shadow-lg shadow-brand-gold/20 whitespace-nowrap"
                 >
-                  Reclamar Bono <ChevronRight className="w-4 h-4" />
+                  Bono <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
                 </a>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function Layout() {
             </div>
             
             <div className="text-[10px] text-brand-text-muted text-center md:text-right max-w-md uppercase tracking-widest leading-relaxed">
-              Este sitio contiene enlaces de afiliación. Las reseñas son independientes. El juego es para mayores de 18 años. Ayuda a la ludopatía: 900 333 888. © 2026 CasinosTOP.
+              Este sitio contiene enlaces de afiliación. Las reseñas son independientes. El juego es para mayores de 18 años. Ayuda a la ludopatía: 900 333 888. © {new Date().getFullYear()} CasinosTOP.
             </div>
           </div>
         </div>

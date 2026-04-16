@@ -51,6 +51,9 @@ export default function Review() {
               <h1 className="text-4xl md:text-5xl font-display font-extrabold leading-tight">
                 {casino.name} Casino España: <br className="hidden md:block" /> Review Completa 2026
               </h1>
+              <p className="text-brand-text-muted text-sm mt-2">
+                Última actualización: {new Date(casino.lastVerified).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </p>
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (

@@ -32,6 +32,7 @@ export interface Casino {
     support: string;
     verdict: string;
   };
+  lastVerified: string;
 }
 
 export const CASINOS: Casino[] = [
@@ -50,6 +51,7 @@ export const CASINOS: Casino[] = [
     affiliateUrl: "https://tonybet.es/",
     isRecommended: true,
     isBestBono: true,
+    lastVerified: "2026-04-01",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -82,6 +84,7 @@ export const CASINOS: Casino[] = [
     cons: ["Rollover elevado (x60)", "App no incluye todo el catálogo"],
     affiliateUrl: "https://www.luckia.es/",
     isFastWithdraw: true,
+    lastVerified: "2026-04-10",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -113,6 +116,7 @@ export const CASINOS: Casino[] = [
     pros: ["Programa de fidelidad atractivo", "Interfaz sencilla", "Bono combinado"],
     cons: ["Catálogo limitado (~500)", "Retiros no tan rápidos"],
     affiliateUrl: "https://www.gratogana.es/",
+    lastVerified: "2026-03-25",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -145,6 +149,7 @@ export const CASINOS: Casino[] = [
     cons: ["Bono menor en cantidad", "Sin app nativa"],
     affiliateUrl: "https://www.playuzu.es/",
     isRecommended: true,
+    lastVerified: "2026-04-12",
     features: {
       liveCasino: true,
       mobileApp: false,
@@ -176,6 +181,7 @@ export const CASINOS: Casino[] = [
     pros: ["Especialista en videobingo", "Plataforma 100% española", "Interfaz intuitiva"],
     cons: ["Catálogo algo compacto", "Retiros estándar"],
     affiliateUrl: "https://www.yocasino.es/",
+    lastVerified: "2026-04-05",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -207,6 +213,7 @@ export const CASINOS: Casino[] = [
     pros: ["Bono sin depósito 30€", "Mesas reales desde Torrelodones", "Prestigio nacional"],
     cons: ["Rollover x40", "Interfaz algo clásica"],
     affiliateUrl: "https://www.casinogranmadridonline.es/",
+    lastVerified: "2026-04-15",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -239,6 +246,7 @@ export const CASINOS: Casino[] = [
     cons: ["Menos promociones de bienvenida que antes"],
     affiliateUrl: "https://www.leovegas.es/",
     isRecommended: true,
+    lastVerified: "2026-04-13",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -270,6 +278,7 @@ export const CASINOS: Casino[] = [
     pros: ["Bono de depósito generoso (200%)", "Gran variedad de proveedores", "Pagos rápidos"],
     cons: ["Rollover muy alto (x55)"],
     affiliateUrl: "https://www.platincasino.es/",
+    lastVerified: "2026-04-02",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -301,6 +310,7 @@ export const CASINOS: Casino[] = [
     pros: ["Marca global reconocida", "Excelente sección de deportes", "Rollover justo"],
     cons: ["Catálogo de juegos algo menor"],
     affiliateUrl: "https://betway.es/",
+    lastVerified: "2026-03-20",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -332,6 +342,7 @@ export const CASINOS: Casino[] = [
     pros: ["Diseño moderno", "Locales físicos en España", "Acepta Bizum"],
     cons: ["Menos juegos que los líderes"],
     affiliateUrl: "https://www.versus.es/",
+    lastVerified: "2026-04-08",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -363,6 +374,7 @@ export const CASINOS: Casino[] = [
     pros: ["Casa de apuestas líder", "Cobro inmediato en locales", "Marca muy conocida"],
     cons: ["Web a veces lenta"],
     affiliateUrl: "https://www.codere.es/",
+    lastVerified: "2026-04-05",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -394,6 +406,7 @@ export const CASINOS: Casino[] = [
     pros: ["10€ gratis al registrarte", "Cobro en tiendas", "Acepta Bizum"],
     cons: ["Rollover elevado (x50)"],
     affiliateUrl: "https://www.sportium.es/",
+    lastVerified: "2026-04-10",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -425,6 +438,7 @@ export const CASINOS: Casino[] = [
     pros: ["Retiros muy rápidos", "Gran variedad de slots", "Interfaz moderna"],
     cons: ["Menos juegos de mesa"],
     affiliateUrl: "https://www.yaasscasino.es/",
+    lastVerified: "2026-04-01",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -456,6 +470,7 @@ export const CASINOS: Casino[] = [
     pros: ["Bono de hasta 300€", "Rollover justo (x30)", "Diseño único"],
     cons: ["Menos mesas en vivo que otros"],
     affiliateUrl: "https://www.casumo.es/",
+    lastVerified: "2026-03-28",
     features: {
       liveCasino: true,
       mobileApp: true,
@@ -487,6 +502,7 @@ export const CASINOS: Casino[] = [
     pros: ["Catálogo masivo (+6000 juegos)", "Retiros rápidos", "Muchos proveedores"],
     cons: ["Bono de bienvenida menos claro", "Rollover x50"],
     affiliateUrl: "https://www.casino777.es/",
+    lastVerified: "2026-04-06",
     features: {
       liveCasino: true,
       mobileApp: true,

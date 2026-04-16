@@ -28,16 +28,20 @@ export default function CasinoComparator() {
   return (
     <div className="fixed bottom-24 left-4 z-40">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogTrigger asChild>
-          <Button 
-            className={`rounded-full h-14 px-6 shadow-2xl transition-all ${
-              selectedIds.length > 0 ? "bg-brand-gold text-black scale-100" : "bg-brand-card text-brand-text-muted scale-90 opacity-50"
-            }`}
-          >
-            <Scale className="w-5 h-5 mr-2" />
-            Comparar {selectedIds.length > 0 && `(${selectedIds.length})`}
-          </Button>
-        </DialogTrigger>
+        <DialogTrigger
+          render={
+            <Button
+              className={`rounded-full h-14 px-6 shadow-2xl transition-all ${
+                selectedIds.length > 0
+                  ? "bg-brand-gold text-black scale-100"
+                  : "bg-brand-card text-brand-text-muted scale-90 opacity-50"
+              }`}
+            >
+              <Scale className="w-5 h-5 mr-2" />
+              Comparar {selectedIds.length > 0 && `(${selectedIds.length})`}
+            </Button>
+          }
+        />
         <DialogContent className="max-w-5xl bg-brand-bg border-brand-border text-white overflow-hidden">
           <DialogHeader>
             <DialogTitle className="text-2xl font-display font-bold">Comparador de Casinos</DialogTitle>

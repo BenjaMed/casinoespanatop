@@ -25,7 +25,7 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 className="badge-live"
               >
-                Ranking Actualizado Hoy: Mayo 2026
+                Ranking Actualizado: {new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })}
               </motion.div>
 
               <motion.h1 
@@ -111,9 +111,9 @@ export default function Home() {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto prose prose-invert prose-brand">
-            <h2 className="text-4xl font-display font-extrabold mb-8 text-white">Guía Completa: Cómo Elegir los Mejores Casinos Online en España 2026</h2>
+            <h2 className="text-4xl font-display font-extrabold mb-8 text-white">Cómo Elegir los Mejores Casinos Online en España (Guía 2026)</h2>
             <p className="text-lg text-brand-text-muted leading-relaxed mb-6">
-              Encontrar el **mejor casino online en España** no es tarea fácil. Con la regulación de la DGOJ (Dirección General de Ordenación del Juego), el mercado español es uno de los más seguros del mundo, pero también uno de los más competitivos. En CasinosTOP, analizamos cada operador bajo criterios estrictos de seguridad, variedad de juegos y rapidez de pagos.
+              Encontrar el mejor casino online en España no es tarea fácil. Con la regulación de la DGOJ (Dirección General de Ordenación del Juego), el mercado español es uno de los más seguros del mundo, pero también uno de los más competitivos. En CasinosTOP, analizamos cada operador bajo criterios estrictos de seguridad, variedad de juegos y rapidez de pagos.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 not-prose">
@@ -158,12 +158,7 @@ export default function Home() {
               </li>
             </ul>
 
-            <div className="bg-brand-gold/5 border border-brand-gold/20 rounded-3xl p-8 my-16">
-              <h3 className="text-2xl font-bold mb-4 text-brand-gold">⚠️ Importante: Nueva Regulación de Bonos</h3>
-              <p className="text-sm text-brand-text-muted leading-relaxed">
-                Desde mayo de 2021, según el Real Decreto 958/2020, los casinos online en España no pueden ofrecer bonos de bienvenida a nuevos usuarios. Para acceder a promociones, debes llevar registrado al menos 30 días y haber verificado tu identidad documentalmente. En nuestro sitio te explicamos cómo cumplir estos requisitos para maximizar tus beneficios de forma legal.
-              </p>
-            </div>
+
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Mejores Métodos de Pago en Casinos Españoles</h2>
             <p className="text-brand-text-muted mb-8">
@@ -199,7 +194,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Análisis Detallado de los Operadores Líderes en España</h2>
             <p className="text-brand-text-muted mb-6">
-              Para ayudarte a decidir, hemos preparado un análisis pormenorizado de los que consideramos los **mejores casinos online en España** en este momento. Cada uno destaca en un área específica, permitiéndote elegir según tus preferencias personales.
+              Para ayudarte a decidir, hemos preparado un análisis pormenorizado de los que consideramos los mejores casinos online en España en este momento. Cada uno destaca en un área específica, permitiéndote elegir según tus preferencias personales.
             </p>
 
             <div className="space-y-12 my-16">
@@ -212,11 +207,18 @@ export default function Home() {
                   Su sección de casino en vivo es, posiblemente, la mejor del país, con mesas exclusivas y crupieres que crean un ambiente de club privado inigualable. Además, su integración con Bizum es perfecta, permitiendo depósitos en segundos.
                 </p>
                 <div className="mt-8">
-                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                    <a href="https://www.luckia.es/" target="_blank" rel="noopener noreferrer">
-                      Visitar Luckia <ChevronRight className="ml-2 w-5 h-5" />
-                    </a>
-                  </Button>
+                  <Button
+                    className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
+                    render={
+                      <a
+                        href="https://www.luckia.es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visitar Luckia <ChevronRight className="ml-2 w-5 h-5" />
+                      </a>
+                    }
+                  />
                 </div>
               </div>
 
@@ -229,11 +231,18 @@ export default function Home() {
                   La app de Bet365 es un prodigio de la ingeniería: rápida, segura y con una estabilidad que pocos competidores pueden igualar. Si buscas un sitio donde todo funcione a la primera, este es tu casino.
                 </p>
                 <div className="mt-8">
-                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                    <a href="https://www.bet365.es/" target="_blank" rel="noopener noreferrer">
-                      Jugar en Bet365 <ChevronRight className="ml-2 w-5 h-5" />
-                    </a>
-                  </Button>
+                  <Button
+                    className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
+                    render={
+                      <a
+                        href="https://www.bet365.es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Jugar en Bet365 <ChevronRight className="ml-2 w-5 h-5" />
+                      </a>
+                    }
+                  />
                 </div>
               </div>
 
@@ -246,11 +255,18 @@ export default function Home() {
                   Su interfaz oscura y elegante encaja perfectamente con nuestra filosofía de diseño. Es un casino que se siente premium desde el primer clic, ideal para jugadores que buscan algo diferente a la oferta estándar.
                 </p>
                 <div className="mt-8">
-                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                    <a href="https://www.888casino.es/" target="_blank" rel="noopener noreferrer">
-                      Ir a 888casino <ChevronRight className="ml-2 w-5 h-5" />
-                    </a>
-                  </Button>
+                  <Button
+                    className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
+                    render={
+                      <a
+                        href="https://www.888casino.es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ir a 888casino <ChevronRight className="ml-2 w-5 h-5" />
+                      </a>
+                    }
+                  />
                 </div>
               </div>
 
@@ -260,14 +276,21 @@ export default function Home() {
                   LeoVegas nació con el móvil en mente y se nota. No es que su web se adapte al móvil; es que parece diseñada para ser una extensión de tu mano. Su catálogo de slots es infinito, colaborando con casi todos los proveedores con licencia en España.
                 </p>
                 <p className="text-brand-text-muted">
-                  Su programa de fidelidad (disponible tras 30 días) es uno de los más generosos, premiando la constancia con bonos de dinero real y giros gratis sin complicaciones.
+                  Su programa de fidelidad es uno de los más generosos, premiando la constancia con bonos de dinero real y giros gratis sin complicaciones.
                 </p>
                 <div className="mt-8">
-                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                    <a href="https://www.leovegas.es/es-es/" target="_blank" rel="noopener noreferrer">
-                      Probar LeoVegas <ChevronRight className="ml-2 w-5 h-5" />
-                    </a>
-                  </Button>
+                  <Button
+                    className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
+                    render={
+                      <a
+                        href="https://www.leovegas.es/es-es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Probar LeoVegas <ChevronRight className="ml-2 w-5 h-5" />
+                      </a>
+                    }
+                  />
                 </div>
               </div>
 
@@ -280,18 +303,25 @@ export default function Home() {
                   Es la opción preferida para los "high rollers" o jugadores que apuestan fuerte, gracias a sus límites de mesa flexibles y su atención VIP personalizada.
                 </p>
                 <div className="mt-8">
-                  <Button className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                    <a href="https://www.casinogranmadridonline.es/" target="_blank" rel="noopener noreferrer">
-                      Casino Gran Madrid <ChevronRight className="ml-2 w-5 h-5" />
-                    </a>
-                  </Button>
+                  <Button
+                    className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
+                    render={
+                      <a
+                        href="https://www.casinogranmadridonline.es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Casino Gran Madrid <ChevronRight className="ml-2 w-5 h-5" />
+                      </a>
+                    }
+                  />
                 </div>
               </div>
             </div>
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Historia y Evolución del Juego Online en España</h2>
             <p className="text-brand-text-muted mb-6">
-              La industria de los **mejores casinos online en España** ha recorrido un largo camino desde sus inicios. Antes de 2011, el mercado operaba en una zona gris legal, donde los jugadores españoles accedían a sitios internacionales sin una protección clara del estado. Todo cambió con la aprobación de la Ley 13/2011 de Regulación del Juego, que sentó las bases de lo que hoy conocemos como un mercado seguro y regulado.
+              La industria de los mejores casinos online en España ha recorrido un largo camino desde sus inicios. Antes de 2011, el mercado operaba en una zona gris legal, donde los jugadores españoles accedían a sitios internacionales sin una protección clara del estado. Todo cambió con la aprobación de la Ley 13/2011 de Regulación del Juego, que sentó las bases de lo que hoy conocemos como un mercado seguro y regulado.
             </p>
             <p className="text-brand-text-muted mb-6">
               Desde entonces, la Dirección General de Ordenación del Juego (DGOJ) ha sido el faro que guía la industria, otorgando licencias solo a aquellos operadores que demuestran solvencia técnica, económica y un compromiso inquebrantable con el juego responsable. En 2026, España se posiciona como un referente mundial en regulación, equilibrando la libertad de mercado con la protección máxima al consumidor.
@@ -299,7 +329,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Nuestra Metodología: ¿Cómo Elegimos los Mejores Casinos?</h2>
             <p className="text-brand-text-muted mb-6">
-              No nos tomamos a la ligera la recomendación de un casino. Para que un sitio aparezca en nuestro ranking de los **mejores casinos online en España**, debe superar una auditoría exhaustiva que dura semanas. Estos son los puntos clave de nuestro análisis:
+              No nos tomamos a la ligera la recomendación de un casino. Para que un sitio aparezca en nuestro ranking de los mejores casinos online en España, debe superar una auditoría exhaustiva que dura semanas. Estos son los puntos clave de nuestro análisis:
             </p>
             <div className="space-y-8 my-12">
               <div className="glass p-8 rounded-3xl border-brand-border">
@@ -337,9 +367,18 @@ export default function Home() {
                 <h4 className="text-xl font-bold mb-2">🎰 ¿Buscas las mejores slots?</h4>
                 <p className="text-sm text-brand-text-muted">LeoVegas tiene el catálogo más extenso de España.</p>
               </div>
-              <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                <a href="https://www.leovegas.es/es-es/" target="_blank" rel="noopener noreferrer">Jugar Ahora</a>
-              </Button>
+              <Button
+                className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20"
+                render={
+                  <a
+                    href="https://www.leovegas.es/es-es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Jugar Ahora
+                  </a>
+                }
+              />
             </div>
 
             <h3 className="text-2xl font-bold mt-12 mb-6">Ruleta en Vivo: La Experiencia Real</h3>
@@ -373,7 +412,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Seguridad y Protección al Jugador: Un Compromiso Real</h2>
             <p className="text-brand-text-muted mb-6">
-              Jugar en los **mejores casinos online en España** significa jugar bajo el amparo de la ley. La DGOJ obliga a los operadores a implementar sistemas de protección que incluyen:
+              Jugar en los mejores casinos online en España significa jugar bajo el amparo de la ley. La DGOJ obliga a los operadores a implementar sistemas de protección que incluyen:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12 not-prose">
               <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -402,7 +441,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Guía de Slots por Temática: Encuentra tu Estilo</h2>
             <p className="text-brand-text-muted mb-6">
-              El mundo de las tragaperras es tan vasto que a veces es difícil elegir. En los **mejores casinos online en España**, las slots se dividen en categorías que atraen a diferentes tipos de jugadores:
+              El mundo de las tragaperras es tan vasto que a veces es difícil elegir. En los mejores casinos online en España, las slots se dividen en categorías que atraen a diferentes tipos de jugadores:
             </p>
             <ul className="space-y-4 text-brand-text-muted mb-12 list-none p-0">
               <li><strong>Mitología y Aventura:</strong> Títulos como *Age of the Gods* o *Book of Ra* te transportan a mundos antiguos llenos de tesoros.</li>
@@ -428,7 +467,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Glosario de Términos: Habla como un Profesional</h2>
             <p className="text-brand-text-muted mb-6">
-              Para moverte con soltura por los **mejores casinos online en España**, debes conocer estos términos:
+              Para moverte con soltura por los mejores casinos online en España, debes conocer estos términos:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="space-y-2">
@@ -473,14 +512,19 @@ export default function Home() {
                 <h4 className="text-xl font-bold mb-2">🛡️ Juega Seguro en Luckia</h4>
                 <p className="text-sm text-brand-text-muted">Operador 100% español con licencia DGOJ garantizada.</p>
               </div>
-              <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20" asChild>
-                <a href="https://www.luckia.es/" target="_blank" rel="noopener noreferrer">Entrar a Luckia</a>
-              </Button>
+              <Button
+                className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20"
+                render={
+                  <a href="https://www.luckia.es/" target="_blank" rel="noopener noreferrer">
+                    Entrar a Luckia
+                  </a>
+                }
+              />
             </div>
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">La Revolución de la Inteligencia Artificial en el Casino</h2>
             <p className="text-brand-text-muted mb-6">
-              En 2026, la IA no solo sirve para recomendarte juegos. Los **mejores casinos online en España** utilizan algoritmos avanzados para detectar patrones de juego compulsivo antes de que se conviertan en un problema, enviando alertas personalizadas al usuario. También mejora la seguridad, detectando intentos de fraude o suplantación de identidad en milisegundos.
+              En 2026, la IA no solo sirve para recomendarte juegos. Los mejores casinos online en España utilizan algoritmos avanzados para detectar patrones de juego compulsivo antes de que se conviertan en un problema, enviando alertas personalizadas al usuario. También mejora la seguridad, detectando intentos de fraude o suplantación de identidad en milisegundos.
             </p>
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Cómo Identificar un Casino Ilegal: Señales de Alerta</h2>
@@ -509,7 +553,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Torneos de Casino: Compite contra Otros</h2>
             <p className="text-brand-text-muted mb-6">
-              Muchos de los **mejores casinos online en España** organizan torneos de slots o blackjack. En ellos, no solo juegas contra la casa, sino que compites por escalar posiciones en un ranking y ganar premios adicionales como dinero en efectivo o viajes. Es una forma excelente de añadir un componente social al juego online.
+              Muchos de los mejores casinos online en España organizan torneos de slots o blackjack. En ellos, no solo juegas contra la casa, sino que compites por escalar posiciones en un ranking y ganar premios adicionales como dinero en efectivo o viajes. Es una forma excelente de añadir un componente social al juego online.
             </p>
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Juego en Realidad Virtual: El Futuro ya está aquí</h2>
@@ -519,18 +563,25 @@ export default function Home() {
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Conclusión: Tu Próxima Aventura Comienza Aquí</h2>
             <p className="text-brand-text-muted mb-6">
-              Elegir uno de los **mejores casinos online en España** es el primer paso para una experiencia de entretenimiento gratificante. Ya sea que busques la emoción de la ruleta en vivo, la estrategia del blackjack o la diversión instantánea de las slots, nuestro ranking te garantiza que lo harás en un entorno seguro, legal y con las mejores condiciones del mercado.
+              Elegir uno de los mejores casinos online en España es el primer paso para una experiencia de entretenimiento gratificante. Ya sea que busques la emoción de la ruleta en vivo, la estrategia del blackjack o la diversión instantánea de las slots, nuestro ranking te garantiza que lo harás en un entorno seguro, legal y con las mejores condiciones del mercado.
             </p>
             <p className="text-brand-text-muted mb-12">
               Recuerda siempre jugar con responsabilidad, establecer tus propios límites y ver el casino como lo que es: una forma de ocio. ¡Mucha suerte en las mesas!
             </p>
 
             <div className="not-prose mb-20 text-center">
-              <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black px-16 py-8 text-2xl font-display font-bold rounded-2xl shadow-[0_0_50px_rgba(245,197,24,0.3)] transition-all transform hover:scale-105" asChild>
-                <a href="https://www.bet365.es/" target="_blank" rel="noopener noreferrer">
-                  VER RANKING TOP 15 COMPLETO
-                </a>
-              </Button>
+              <Button
+                className="bg-brand-gold hover:bg-brand-gold/90 text-black px-16 py-8 text-2xl font-display font-bold rounded-2xl shadow-[0_0_50px_rgba(245,197,24,0.3)] transition-all transform hover:scale-105"
+                render={
+                  <a
+                    href="https://www.bet365.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    VER RANKING TOP 15 COMPLETO
+                  </a>
+                }
+              />
             </div>
 
             <h2 className="text-3xl font-display font-bold mt-16 mb-8">Preguntas Frecuentes (FAQ)</h2>

@@ -58,7 +58,7 @@ export default function NoDepositBonus() {
           <div className="max-w-4xl mx-auto prose prose-invert prose-brand">
             <h2 className="text-4xl font-display font-bold mb-8 text-white text-center">¿Qué son los bonos sin depósito y cómo funcionan?</h2>
             <p className="text-xl text-brand-text-muted text-center mb-16 leading-relaxed">
-              Los **bonos sin depósito** son la "joya de la corona" para los nuevos jugadores. En CasinosTOP te explicamos cómo aprovecharlos legalmente en España para probar juegos sin arriesgar tu propio dinero.
+              Los bonos sin depósito son la "joya de la corona" para los nuevos jugadores. En CasinosTOP te explicamos cómo aprovecharlos legalmente en España para probar juegos sin arriesgar tu propio dinero.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 not-prose mb-20">
@@ -110,7 +110,7 @@ export default function NoDepositBonus() {
                 <Info className="w-6 h-6" /> Límites de Ganancia (Max Cashout)
               </h3>
               <p className="text-brand-text-muted leading-relaxed">
-                Es fundamental entender que los bonos sin depósito suelen tener un **límite máximo de ganancias retirables**. Por ejemplo, si el límite es de 100€ y ganas 500€ con el bono, solo podrás retirar 100€ tras cumplir el rollover. En CasinosTOP siempre recomendamos leer la letra pequeña.
+                Es fundamental entender que los bonos sin depósito suelen tener un límite máximo de ganancias retirables. Por ejemplo, si el límite es de 100€ y ganas 500€ con el bono, solo podrás retirar 100€ tras cumplir el rollover. En CasinosTOP siempre recomendamos leer la letra pequeña.
               </p>
             </div>
 
@@ -125,9 +125,12 @@ export default function NoDepositBonus() {
                     <p className="text-sm text-brand-text-muted">{casino.review.summary}</p>
                   </div>
                   <div className="shrink-0">
-                    <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20 transition-all hover:scale-[1.02]" asChild>
-                      <a href={casino.affiliateUrl} target="_blank" rel="noopener noreferrer">Reclamar Bono</a>
-                    </Button>
+                    <Button
+                      className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20 transition-all hover:scale-[1.02]"
+                      render={
+                        <a href={casino.affiliateUrl} target="_blank" rel="noopener noreferrer">Reclamar Bono</a>
+                      }
+                    />
                   </div>
                 </div>
               ))}
