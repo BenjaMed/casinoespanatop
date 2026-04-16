@@ -26,17 +26,15 @@ export default function Layout() {
           <Link to="/" className="flex items-center gap-2 group">
             <div className="text-2xl font-extrabold tracking-tighter">
               <span className="text-brand-gold">CASINOS</span>
-              <span className="text-white">ESPAÑATOP</span>
+              <span className="text-white">TOP</span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             <Link to="/" className="text-xs font-bold uppercase tracking-widest text-brand-gold">Home</Link>
-            <Link to="/bonos-casino" className="text-xs font-bold uppercase tracking-widest text-brand-text-muted hover:text-brand-gold transition-colors">Bonos</Link>
-            <Link to="/mejores-casinos-online" className="text-xs font-bold uppercase tracking-widest text-brand-text-muted hover:text-brand-gold transition-colors">Pagos</Link>
-            <Link to="/blog" className="text-xs font-bold uppercase tracking-widest text-brand-text-muted hover:text-brand-gold transition-colors">Blog</Link>
-            <Link to="/guias" className="text-xs font-bold uppercase tracking-widest text-brand-text-muted hover:text-brand-gold transition-colors">Guías</Link>
+            <Link to="/bonos-bienvenida" className="text-xs font-bold uppercase tracking-widest text-brand-text-muted hover:text-brand-gold transition-colors">Bonos Bienvenida</Link>
+            <Link to="/bonos-sin-deposito" className="text-xs font-bold uppercase tracking-widest text-brand-text-muted hover:text-brand-gold transition-colors">Bonos Sin Depósito</Link>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -59,30 +57,10 @@ export default function Layout() {
             className="fixed inset-0 z-40 bg-brand-bg pt-24 px-4 md:hidden"
           >
             <nav className="flex flex-col gap-6 text-center">
-              <Link 
-                to="/mejores-casinos-online" 
-                className="text-2xl font-display font-bold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Casinos Online
-              </Link>
-              <Link 
-                to="/bonos-casino" 
-                className="text-2xl font-display font-bold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Mejores Bonos
-              </Link>
-              <Link 
-                to="/juego-responsable" 
-                className="text-2xl font-display font-bold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Juego Responsable
-              </Link>
-              <Button className="btn-gold w-full py-6 text-xl">
-                Ver Ranking Top 15
-              </Button>
+              <Link to="/" className="text-2xl font-display font-bold" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/bonos-bienvenida" className="text-2xl font-display font-bold" onClick={() => setIsMenuOpen(false)}>Bonos Bienvenida</Link>
+              <Link to="/bonos-sin-deposito" className="text-2xl font-display font-bold" onClick={() => setIsMenuOpen(false)}>Bonos Sin Depósito</Link>
+              <Link to="/juego-responsable" className="text-2xl font-display font-bold" onClick={() => setIsMenuOpen(false)}>Juego Responsable</Link>
             </nav>
           </motion.div>
         )}
@@ -134,25 +112,54 @@ export default function Layout() {
       </AnimatePresence>
 
       {/* Footer */}
-      <footer className="bg-black/40 border-t border-brand-border py-8">
-        <div className="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex gap-4">
-            <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
-              +18
+      <footer className="bg-black/40 border-t border-brand-border py-12">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-1 md:col-span-2 space-y-4">
+              <div className="text-xl font-display font-extrabold tracking-tighter text-white">
+                CASINOS<span className="text-brand-gold">TOP</span>
+              </div>
+              <p className="text-xs text-brand-text-muted leading-relaxed max-w-sm">
+                Tu guía #1 para encontrar los mejores casinos online legales en España. Analizamos seguridad, bonos y rapidez de pagos para que juegues con total confianza.
+              </p>
             </div>
-            <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
-              DGOJ
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-6">Navegación</h4>
+              <ul className="space-y-3 text-xs text-brand-text-muted">
+                <li><Link to="/bonos-bienvenida" className="hover:text-brand-gold transition-colors">Bonos Bienvenida</Link></li>
+                <li><Link to="/bonos-sin-deposito" className="hover:text-brand-gold transition-colors">Bonos Sin Depósito</Link></li>
+                <li><Link to="/juego-responsable" className="hover:text-brand-gold transition-colors">Juego Responsable</Link></li>
+              </ul>
             </div>
-            <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
-              SEGURO
-            </div>
-            <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
-              RGIAJ
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-6">Legal</h4>
+              <ul className="space-y-3 text-xs text-brand-text-muted">
+                <li><Link to="/aviso-legal" className="hover:text-brand-gold transition-colors">Aviso Legal</Link></li>
+                <li><Link to="/politica-privacidad" className="hover:text-brand-gold transition-colors">Privacidad</Link></li>
+                <li><Link to="/juego-responsable" className="hover:text-brand-gold transition-colors">Juego Responsable</Link></li>
+              </ul>
             </div>
           </div>
-          
-          <div className="text-[10px] text-brand-text-muted text-center md:text-right max-w-md uppercase tracking-widest leading-relaxed">
-            Este sitio contiene enlaces de afiliación. Las reseñas son independientes. El juego es para mayores de 18 años. Ayuda a la ludopatía: 900 333 888. © 2026 CasinosEspañaTop.
+
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-8 border-t border-brand-border">
+            <div className="flex gap-4">
+              <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
+                +18
+              </div>
+              <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
+                DGOJ
+              </div>
+              <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
+                SEGURO
+              </div>
+              <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-[10px] font-extrabold text-black">
+                RGIAJ
+              </div>
+            </div>
+            
+            <div className="text-[10px] text-brand-text-muted text-center md:text-right max-w-md uppercase tracking-widest leading-relaxed">
+              Este sitio contiene enlaces de afiliación. Las reseñas son independientes. El juego es para mayores de 18 años. Ayuda a la ludopatía: 900 333 888. © 2026 CasinosTOP.
+            </div>
           </div>
         </div>
       </footer>

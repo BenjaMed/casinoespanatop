@@ -20,14 +20,14 @@ export default function Legal({ title }: LegalProps) {
           <section className="space-y-4">
             <h2 className="text-2xl font-display font-bold text-brand-gold">1. Introducción</h2>
             <p className="text-brand-text-muted leading-relaxed">
-              Bienvenido a CasinosEspañaTop.es. Al acceder y utilizar este sitio web, usted acepta cumplir con los siguientes términos y condiciones. Este sitio web es un comparador de casinos online destinado exclusivamente a personas mayores de 18 años residentes en España.
+              Bienvenido a CasinosTOP. Al acceder y utilizar este sitio web, usted acepta cumplir con los siguientes términos y condiciones. Este sitio web es un comparador de casinos online destinado exclusivamente a personas mayores de 18 años residentes en España.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-display font-bold text-brand-gold">2. Divulgación de Afiliación</h2>
             <p className="text-brand-text-muted leading-relaxed">
-              CasinosEspañaTop.es es un sitio web de marketing de afiliación. Esto significa que podemos recibir una comisión si usted hace clic en uno de nuestros enlaces y se registra en un casino online. Sin embargo, esto no afecta la objetividad de nuestras reseñas, que se basan en análisis independientes y pruebas reales.
+              CasinosTOP es un sitio web de marketing de afiliación. Esto significa que podemos recibir una comisión si usted hace clic en uno de nuestros enlaces y se registra en un casino online. Sin embargo, esto no afecta la objetividad de nuestras reseñas, que se basan en análisis independientes y pruebas reales.
             </p>
           </section>
 

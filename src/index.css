@@ -35,7 +35,7 @@
   }
 
   .btn-primary {
-    @apply bg-brand-green hover:bg-brand-green/90 text-white font-extrabold py-4 px-8 rounded-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-brand-green/20;
+    @apply bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold py-4 px-8 rounded-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-brand-gold/20;
   }
 
   .btn-gold {
@@ -43,7 +43,7 @@
   }
 
   .btn-outline {
-    @apply border border-brand-green text-brand-green hover:bg-brand-green hover:text-white font-bold py-2 px-4 rounded transition-all;
+    @apply border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-black font-bold py-2 px-4 rounded transition-all;
   }
 
   .badge-live {
