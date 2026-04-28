@@ -208,6 +208,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8">
                   <Button
+                    nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
                     render={
                       <a
@@ -232,6 +233,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8">
                   <Button
+                    nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
                     render={
                       <a
@@ -256,6 +258,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8">
                   <Button
+                    nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
                     render={
                       <a
@@ -280,6 +283,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8">
                   <Button
+                    nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
                     render={
                       <a
@@ -304,6 +308,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8">
                   <Button
+                    nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
                     render={
                       <a
@@ -368,6 +373,7 @@ export default function Home() {
                 <p className="text-sm text-brand-text-muted">LeoVegas tiene el catálogo más extenso de España.</p>
               </div>
               <Button
+                nativeButton={false}
                 className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20"
                 render={
                   <a
@@ -513,6 +519,7 @@ export default function Home() {
                 <p className="text-sm text-brand-text-muted">Operador 100% español con licencia DGOJ garantizada.</p>
               </div>
               <Button
+                nativeButton={false}
                 className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20"
                 render={
                   <a href="https://www.luckia.es/" target="_blank" rel="noopener noreferrer">
@@ -571,6 +578,7 @@ export default function Home() {
 
             <div className="not-prose mb-20 text-center">
               <Button
+                nativeButton={false}
                 className="bg-brand-gold hover:bg-brand-gold/90 text-black px-16 py-8 text-2xl font-display font-bold rounded-2xl shadow-[0_0_50px_rgba(245,197,24,0.3)] transition-all transform hover:scale-105"
                 render={
                   <a

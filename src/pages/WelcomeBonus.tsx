@@ -158,6 +158,7 @@ export default function WelcomeBonus() {
                             <span className="text-white font-bold">{casino.rollover}</span>
                           </div>
                           <Button
+                            nativeButton={false}
                             className="w-full py-8 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20 transition-all hover:scale-[1.02]"
                             render={
                               <a href={casino.affiliateUrl} target="_blank" rel="noopener noreferrer">
