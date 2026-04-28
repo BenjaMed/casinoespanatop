@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CASINOS } from "../data/casinos";
 import { Shield, Zap, Gift, ChevronRight, CheckCircle2, Star, Trophy, Info, HelpCircle } from "lucide-react";
 import CasinoTable from "../components/CasinoTable";
@@ -166,6 +167,11 @@ export default function WelcomeBonus() {
                               </a>
                             }
                           />
+                          <div className="text-center">
+                            <Link to={`/casino/${casino.slug}`} className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors font-bold uppercase tracking-widest">
+                              Leer Reseña Completa
+                            </Link>
+                          </div>
                           <p className="text-[10px] text-center text-brand-text-muted">+18 | Juega con responsabilidad</p>
                         </div>
                       </div>

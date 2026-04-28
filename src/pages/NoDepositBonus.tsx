@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CASINOS } from "../data/casinos";
 import { Shield, Gift, ChevronRight, CheckCircle2, Star, Trophy, Info, HelpCircle, Zap } from "lucide-react";
 import CasinoTable from "../components/CasinoTable";
@@ -124,7 +125,7 @@ export default function NoDepositBonus() {
                     <p className="text-brand-gold font-bold mb-4">{casino.bonus}</p>
                     <p className="text-sm text-brand-text-muted">{casino.review.summary}</p>
                   </div>
-                  <div className="shrink-0">
+                  <div className="shrink-0 flex flex-col gap-3">
                     <Button
                       nativeButton={false}
                       className="bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold px-8 py-6 rounded-xl shadow-lg shadow-brand-gold/20 transition-all hover:scale-[1.02]"
@@ -132,6 +133,9 @@ export default function NoDepositBonus() {
                         <a href={casino.affiliateUrl} target="_blank" rel="noopener noreferrer">Reclamar Bono</a>
                       }
                     />
+                    <Link to={`/casino/${casino.slug}`} className="text-[10px] text-brand-text-muted hover:text-brand-gold transition-colors font-bold uppercase tracking-widest text-center">
+                      Leer Reseña
+                    </Link>
                   </div>
                 </div>
               ))}

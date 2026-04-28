@@ -1,6 +1,7 @@
 import { Shield, CheckCircle2, Zap, Trophy, Star, ChevronRight, MessageSquare, HelpCircle } from "lucide-react";
 import CasinoTable from "../components/CasinoTable";
 import CasinoQuiz from "../components/CasinoQuiz";
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { Button } from "../components/ui/button";
@@ -206,7 +207,7 @@ export default function Home() {
                 <p className="text-brand-text-muted">
                   Su sección de casino en vivo es, posiblemente, la mejor del país, con mesas exclusivas y crupieres que crean un ambiente de club privado inigualable. Además, su integración con Bizum es perfecta, permitiendo depósitos en segundos.
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col md:flex-row items-center gap-4">
                   <Button
                     nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
@@ -220,6 +221,9 @@ export default function Home() {
                       </a>
                     }
                   />
+                  <Link to="/casino/luckia" className="text-sm text-brand-text-muted hover:text-brand-gold transition-colors font-bold uppercase tracking-widest">
+                    Leer Reseña
+                  </Link>
                 </div>
               </div>
 
@@ -281,7 +285,7 @@ export default function Home() {
                 <p className="text-brand-text-muted">
                   Su programa de fidelidad es uno de los más generosos, premiando la constancia con bonos de dinero real y giros gratis sin complicaciones.
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col md:flex-row items-center gap-4">
                   <Button
                     nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
@@ -295,6 +299,9 @@ export default function Home() {
                       </a>
                     }
                   />
+                  <Link to="/casino/leovegas" className="text-sm text-brand-text-muted hover:text-brand-gold transition-colors font-bold uppercase tracking-widest">
+                    Leer Reseña
+                  </Link>
                 </div>
               </div>
 
@@ -306,7 +313,7 @@ export default function Home() {
                 <p className="text-brand-text-muted">
                   Es la opción preferida para los "high rollers" o jugadores que apuestan fuerte, gracias a sus límites de mesa flexibles y su atención VIP personalizada.
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col md:flex-row items-center gap-4">
                   <Button
                     nativeButton={false}
                     className="w-full md:w-auto px-12 py-6 text-lg bg-brand-gold hover:bg-brand-gold/90 text-black font-extrabold rounded-xl shadow-lg shadow-brand-gold/20"
@@ -320,6 +327,9 @@ export default function Home() {
                       </a>
                     }
                   />
+                  <Link to="/casino/casino-gran-madrid" className="text-sm text-brand-text-muted hover:text-brand-gold transition-colors font-bold uppercase tracking-widest">
+                    Leer Reseña
+                  </Link>
                 </div>
               </div>
             </div>
