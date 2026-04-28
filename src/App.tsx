@@ -20,7 +20,6 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="casino/:slug" element={<Review />} />
-          <Route path="bonos-casino" element={<WelcomeBonus />} />
           <Route path="bonos-bienvenida" element={<WelcomeBonus />} />
           <Route path="bonos-sin-deposito" element={<NoDepositBonus />} />
           <Route path="aviso-legal" element={<Legal title="Aviso Legal" />} />

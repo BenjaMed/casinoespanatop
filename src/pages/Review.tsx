@@ -20,6 +20,7 @@ import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { motion } from "motion/react";
+import SEO from "../components/SEO";
 
 export default function Review() {
   const { slug } = useParams();
@@ -29,8 +30,47 @@ export default function Review() {
     return <Navigate to="/" replace />;
   }
 
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": casino.name,
+    "image": "https://casinostop.guru/og.jpg",
+    "description": casino.review.summary,
+    "brand": {
+      "@type": "Brand",
+      "name": casino.name
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": casino.score,
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "150"
+    },
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "CasinosTOP"
+      },
+      "datePublished": "2026-04-28",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": casino.score,
+        "bestRating": "5"
+      },
+      "reviewBody": casino.review.summary
+    }
+  };
+
   return (
     <div className="pb-20">
+      <SEO 
+        title={`Reseña de ${casino.name} | Opiniones y Bonos 2026`}
+        description={`Análisis detallado de ${casino.name}. Descubre su bono de ${casino.bonus}, juegos, métodos de pago y seguridad legal en España.`}
+        canonical={`https://casinostop.guru/casino/${casino.slug}`}
+        jsonLd={reviewSchema}
+      />
       {/* Hero / Header Section */}
       <section className="bg-brand-card/50 border-b border-brand-border pt-12 pb-16">
         <div className="container mx-auto px-4">

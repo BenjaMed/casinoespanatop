@@ -5,12 +5,35 @@ import CasinoTable from "../components/CasinoTable";
 import { Button } from "../components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { motion } from "motion/react";
+import SEO from "../components/SEO";
 
 export default function WelcomeBonus() {
   const top5 = CASINOS.slice(0, 5);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://casinostop.guru/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bonos de Bienvenida",
+      "item": "https://casinostop.guru/bonos-bienvenida"
+    }]
+  };
+
   return (
     <div className="pb-20">
+      <SEO 
+        title="Mejores Bonos de Bienvenida Casino 2026 | España"
+        description="Ranking actualizado de los mejores bonos de bienvenida para casinos online en España. Compara porcentajes, rollover y términos para maximizar tu depósito."
+        canonical="https://casinostop.guru/bonos-bienvenida"
+        jsonLd={breadcrumbSchema}
+      />
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">

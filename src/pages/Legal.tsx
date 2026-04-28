@@ -1,12 +1,20 @@
 import { Shield, Info, Scale } from "lucide-react";
+import SEO from "../components/SEO";
 
 interface LegalProps {
   title: string;
 }
 
 export default function Legal({ title }: LegalProps) {
+  const currentPath = window.location.pathname;
+
   return (
     <div className="container mx-auto px-4 py-20">
+      <SEO 
+        title={title}
+        description={`${title} de CasinosTOP. Consulta los términos legales e información importante sobre juego responsable y privacidad.`}
+        canonical={`https://casinostop.guru${currentPath}`}
+      />
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center text-brand-gold mx-auto">

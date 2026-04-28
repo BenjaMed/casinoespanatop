@@ -5,10 +5,39 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { Button } from "../components/ui/button";
+import SEO from "../components/SEO";
 
 export default function Home() {
+  const homeSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CasinosTOP",
+      "url": "https://casinostop.guru/",
+      "logo": "https://casinostop.guru/og.jpg",
+      "description": "La guía líder en comparación de casinos online legales en España."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CasinosTOP",
+      "url": "https://casinostop.guru/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://casinostop.guru/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ];
+
   return (
     <div className="pb-20">
+      <SEO 
+        title="Mejores Casinos Online España 2026 | Ranking #1"
+        description="Guía experta de los mejores casinos online españoles con licencia DGOJ. Compara bonos de bienvenida, seguridad y rapidez de pagos."
+        canonical="https://casinostop.guru/"
+        jsonLd={homeSchema}
+      />
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden">
         {/* Background Gradients */}

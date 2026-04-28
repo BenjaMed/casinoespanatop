@@ -5,6 +5,7 @@ import CasinoTable from "../components/CasinoTable";
 import { Button } from "../components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { motion } from "motion/react";
+import SEO from "../components/SEO";
 
 export default function NoDepositBonus() {
   // Filter casinos that explicitly mention "sin depósito" in their bonus or review
@@ -15,8 +16,30 @@ export default function NoDepositBonus() {
     c.name === "Sportium"
   );
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://casinostop.guru/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bonos Sin Depósito",
+      "item": "https://casinostop.guru/bonos-sin-deposito"
+    }]
+  };
+
   return (
     <div className="pb-20">
+      <SEO 
+        title="Bonos Sin Depósito Casino Gratis 2026 | España"
+        description="Consigue bonos gratis sin depósito para jugar al casino online. Listado de casinos legales en España que ofrecen saldo real o giros gratis solo por registrarte y verificar tu cuenta."
+        canonical="https://casinostop.guru/bonos-sin-deposito"
+        jsonLd={breadcrumbSchema}
+      />
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
