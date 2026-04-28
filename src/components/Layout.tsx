@@ -72,7 +72,7 @@ export default function Layout() {
       </main>
 
       <FloatingBonus />
-      <CasinoComparator />
+      {/* <CasinoComparator /> */}
 
       {/* Sticky CTA Bar */}
       <AnimatePresence>
