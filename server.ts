@@ -10,6 +10,9 @@ async function startServer() {
   const app = express();
   const PORT = 3000;
 
+  // Explicitly serve static files from the public directory
+  app.use(express.static('public'));
+
   // Use Vite's connect instance as middleware in development mode
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
